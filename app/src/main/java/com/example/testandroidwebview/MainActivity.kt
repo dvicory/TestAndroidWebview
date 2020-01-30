@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity() {
     class MyClient : WebViewClient() {
         override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
             Log.d(LOG_TAG, "shouldOverrideUrlLoading")
-            view?.loadUrl(url)
-            return true
+            return false
         }
 
         @TargetApi(Build.VERSION_CODES.N)
